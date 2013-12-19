@@ -56,7 +56,7 @@ CWindow::CWindow(const string &_class_name, DWORD _style, DWORD _exstyle, const 
 CWindow::~CWindow()
 {
 	//
-	// Окно в системе должно быть уничтожено ранее вызова деструктора
+	// Окно в системе должно быть уничтожено раньше вызова деструктора
 	//
 }
 

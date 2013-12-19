@@ -32,8 +32,7 @@ public:
 	void Hide() { ::ShowWindow(m_hWnd, SW_HIDE); }
 	void Minimize() { ::ShowWindow(m_hWnd, SW_MINIMIZE); }
 	void Maximize() { ::ShowWindow(m_hWnd, SW_MAXIMIZE); }
-	void Destroy() { ::DestroyWindow(m_hWnd); }
-	void Destroy_IfExists() { if (::IsWindow(m_hWnd)) Destroy(); }
+	void Destroy() { if (::IsWindow(m_hWnd)) ::DestroyWindow(m_hWnd); }
 
 private:
 	//
